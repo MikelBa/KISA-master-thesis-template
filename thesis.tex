@@ -1,0 +1,42 @@
+\documentclass[12pt]{Classes/KISALaTeX}
+
+% SPECIAL COMMANDS
+\usepackage{setspace}
+\setstretch{1.2}
+%% correct bad hyphenation
+%\hyphenation{op-tical net-works semi-conduc-tor}
+% ignore slightly overfull and underfull boxes
+\hbadness=10000
+\hfuzz=50pt
+%% declare commonly used operators
+%\DeclareMathOperator*{\argmax}{argmax}
+
+\title{Title of the master thesis}
+\author{Author}
+\supervisor{Supervisor 1 \vskip 1mm Supervisor 2}
+\collegeordept{Department of Computer Science and Artificial Intelligence}
+\faculty{Faculty of Informatics}
+\university{UPV/EHU}
+%\degree{Master of Science in Engineering in Computer Science}
+\degreedate{Donostia / San Sebastian, \longdate \today}
+
+\begin{document}
+\maketitle
+\frontmatter
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+\input{Chapter1/chapter1}
+\input{Chapter2/chapter2}
+\input{Chapter3/chapter3}
+
+\appendix
+\input{Appendix1/appendix1.tex}
+
+\bibliographystyle{ieeetr}
+\bibliography{References/references}
+
+\end{document}
